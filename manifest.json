@@ -1,11 +1,10 @@
 {
-  "name": "My extension",
-  "description": "Shows some of the features of the Context Menus API using an event page",
+  "name": "WSJ Grid",
+  "description": "Enables the debug grid on WSJ.com",
   "version": "0.0.1",  
   "content_scripts": [
     {
-      "matches": ["http://*/*"],
-      "css": ["style.css"],
+      "matches": ["http://*.wsj.com/*"],
       "js": ["jquery.js", "script.js"]
     }
   ],
